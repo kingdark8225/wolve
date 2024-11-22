@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Transactions</title>
+    <link rel="stylesheet" href="transaction.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header class="hero-section">
+      <nav class="navbar">
+        <div class="logo">wolvecoin.io<span>LTD</span></div>
+        <ul class="nav-links">
+          <li><a href="ENERGY.html">Home</a></li>
+          <li><a href="profile.html">Investment Plans</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="transactions-section">
+      <h1>YOUR TRANSACTION HISTORY</h1>
+      <p>start transactions to see history</p>
+
+      <!-- Filters Section -->
+      <div class="filters">
+        <input type="text" id="name-filter" placeholder="Search by Name" />
+        <select id="type-filter">
+          <option value="All">All Types</option>
+          <option value="Deposit">Deposit</option>
+          <option value="Withdraw">Withdraw</option>
+        </select>
+        <select id="crypto-filter">
+          <option value="All">All Cryptocurrencies</option>
+          <option value="BTC">Bitcoin (BTC)</option>
+          <option value="ETH">Ethereum (ETH)</option>
+          <option value="USDT">Tether (USDT)</option>
+        </select>
+      </div>
+
+      <!-- Transactions Table -->
+      <table id="transaction-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Cryptocurrency</th>
+            <th>Amount (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be dynamically injected here -->
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 wolvecoin. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

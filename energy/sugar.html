@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="sugar.css" />
+    <link rel="stylesheet" href="queries.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="logo">
+        <h1>WOLVECOIN.IO</h1>
+      </div>
+      <div class="login-form">
+        <h2>User Login</h2>
+        <form action="login.php" method="POST">
+          <label for="email">Your Email <span>*</span></label>
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+
+          <label for="password">Password <span>*</span></label>
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter Password"
+              required
+            />
+          </div>
+
+          <div class="options">
+            <label>
+              <input type="checkbox" name="remember" /> Remember me
+            </label>
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <a href="profile.html"
+            ><button type="submit" class="btn">Sign in</button></a
+          >
+        </form>
+
+        <p>Don't have an account? <a href="drop.html">Sign Up</a></p>
+      </div>
+      <footer>
+        <p>© Copyright 2024 WOLVECOIN.IO All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

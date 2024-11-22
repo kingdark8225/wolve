@@ -1,0 +1,39 @@
+body {
+  background-color: green;
+}
+.account {
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr);
+  margin-left: 100px;
+}
+
+.create-account {
+  /* border: 2px solid white; */
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 5px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-image: url(stock-trading.jpg);
+  background-size: cover;
+  background-clip: border-box;
+}
+.btn {
+  margin-top: 20px;
+}
+
+.sign-in {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 5px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  /* border: 2px solid white; */
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: -500px;
+}

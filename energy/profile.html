@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="queries.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="profile">
+        <div class="profile-picture"></div>
+        <p class="profile-name">Lilly Lewis</p>
+        <p class="balance">$0.00</p>
+      </div>
+      <nav class="menu">
+        <a href="ENERGY.html" class="menu-item">Home</a>
+        <a href="company.html" class="menu-item">Deposit</a>
+        <a href="#" class="menu-item">Withdraw</a>
+        <a href="transactions.html" class="menu-item">Profit History</a>
+        <a href="#" class="menu-item">Managed Accounts</a>
+        <a href="transactions.html" class="menu-item">Transactions</a>
+        <a href="#" class="menu-item">Trading Plans</a>
+        <a href="#" class="menu-item">My Plans</a>
+        <a href="#" class="menu-item">Referrals</a>
+      </nav>
+    </div>
+    <div class="main-content">
+      <h1>Get started with your investment.</h1>
+      <form class="investment-form">
+        <label for="plan">Choose a Plan</label>
+        <select id="plan">
+          <option value="infinity">Infinity Plan</option>
+          <option value="premium">Premium Plan</option>
+          <option value="basic">Basic Plan</option>
+          <option value="starter">Starter Plan</option>
+        </select>
+
+        <label for="amount">Choose Quick Amount to Invest</label>
+        <div class="quick-amount">
+          <button type="button">$100</button>
+          <button type="button">$250</button>
+          <button type="button">$500</button>
+          <button type="button">$1,000</button>
+          <button type="button">$1,500</button>
+          <button type="button">$2,000</button>
+        </div>
+
+        <label for="custom-amount">Or Enter Your Amount</label>
+        <input type="number" placeholder="$2000" />
+
+        <label for="payment-method">Choose Payment Method</label>
+        <select id="payment-method">
+          <option value="account-balance">Account Balance (Balance: $0)</option>
+        </select>
+
+        <a href="company.html"><button type="submit">Invest</button></a>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <title>profile</title>
+  </head>
+  <body>
+    <h1>account summary</h1>
+    <div class="grid grid--4-cols">
+      <div class="balance">
+        <div class="tips">Account balance</div>
+        <p>$0.00</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="size"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12 2.25a.75.75 0 0 1 .75.75v.756a49.106 49.106 0 0 1 9.152 1 .75.75 0 0 1-.152 1.485h-1.918l2.474 10.124a.75.75 0 0 1-.375.84A6.723 6.723 0 0 1 18.75 18a6.723 6.723 0 0 1-3.181-.795.75.75 0 0 1-.375-.84l2.474-10.124H12.75v13.28c1.293.076 2.534.343 3.697.776a.75.75 0 0 1-.262 1.453h-8.37a.75.75 0 0 1-.262-1.453c1.162-.433 2.404-.7 3.697-.775V6.24H6.332l2.474 10.124a.75.75 0 0 1-.375.84A6.723 6.723 0 0 1 5.25 18a6.723 6.723 0 0 1-3.181-.795.75.75 0 0 1-.375-.84L4.168 6.241H2.25a.75.75 0 0 1-.152-1.485 49.105 49.105 0 0 1 9.152-1V3a.75.75 0 0 1 .75-.75Zm4.878 13.543 1.872-7.662 1.872 7.662h-3.744Zm-9.756 0L5.25 8.131l-1.872 7.662h3.744Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="profit">
+        <div class="tea">Total profit</div>
+        <p>$0.00</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="size"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+
+      <div class="holy">
+        <div class="tee">Bonus</div>
+        <p>$0.00</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="size"
+        >
+          <path
+          fill-rule="evenodd"
+          d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 0 0-.584.859 6.753 6.753 0 0 0 6.138 5.6 6.73 6.73 0 0 0 2.743 1.346A6.707 6.707 0 0 1 9.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 0 0-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 0 1-1.112-3.173 6.73 6.73 0 0 0 2.743-1.347 6.753 6.753 0 0 0 6.139-5.6.75.75 0 0 0-.585-.858 47.077 47.077 0 0 0-3.07-.543V2.62a.75.75 0 0 0-.658-.744 49.22 49.22 0 0 0-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 0 0-.657.744Zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 0 1 3.16 5.337a45.6 45.6 0 0 1 2.006-.343v.256Zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 0 1-2.863 3.207 6.72 6.72 0 0 0 .857-3.294Z"
+          clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="refer">
+        <div class="tii">Referral bonus</div>
+        <p>$0.00</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="size"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="total">
+        <div class="tie">Total deposit</div>
+        <p>$0.00</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="size"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3.75 3.375c0-1.036.84-1.875 1.875-1.875H9a3.75 3.75 0 0 1 3.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 0 1 3.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 0 1-1.875-1.875V3.375Zm10.5 1.875a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 16.5 7.5h-1.875a.375.375 0 0 1-.375-.375V5.25Zm-3.674 9.583a2.249 2.249 0 0 1 3.765-2.174.75.75 0 0 0 1.06-1.06A3.75 3.75 0 0 0 9.076 15H8.25a.75.75 0 0 0 0 1.5h1.156a3.75 3.75 0 0 1-.206 1.559l-.156.439a.75.75 0 0 0 1.042.923l.439-.22a2.113 2.113 0 0 1 1.613-.115 3.613 3.613 0 0 0 2.758-.196l.44-.22a.75.75 0 1 0-.671-1.341l-.44.22a2.113 2.113 0 0 1-1.613.114 3.612 3.612 0 0 0-1.745-.134c.048-.341.062-.686.042-1.029H12a.75.75 0 0 0 0-1.5h-1.379l-.045-.167Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="withdrawal">
+        <div class="tree">Total withdrawal</div>
+        <p>$0.00</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="size"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+            clip-rule="evenodd"
+          />
+          <path
+            d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <section class="plan">
+      <h2>Active plan(s) (0)</h2>
+      <p>You do not have an active investment plan at the moment</p>
+      <a href="plan.html"><button class="bro">Buy a plan</button></a>
+    </section>
+
+  </body>
+  </html>
+    -->

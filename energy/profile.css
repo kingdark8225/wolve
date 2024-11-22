@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #0a3d62;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  background-color: #aaa;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.balance {
+  font-size: 16px;
+  color: #ffd700;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px 0;
+  background: #1e5f74;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.menu-item:hover {
+  background: #34ace0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.investment-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.investment-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.quick-amount {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.quick-amount button {
+  padding: 10px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quick-amount button:hover {
+  background-color: #007acc;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #0a3d62;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #1e5f74;
+}
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 50px;
+  text-align: center;
+  border: 3px solid green;
+  border-collapse: separate;
+}
+
+h1 {
+  text-align: center;
+}
+.size {
+  stroke: green;
+  width: 30px;
+  height: 30px;
+}
+.profit,
+.holy,
+.refer,
+.balance,
+.total,
+.withdrawal {
+  border: 2px solid green;
+}
+
+.plan {
+  text-align: center;
+  margin-top: 40px;
+}
+.bro {
+  background-color: green;
+  color: white;
+}
+.bro:hover {
+  background-color: rgb(3, 54, 3);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.copyright {
+  text-align: center;
+  font-weight: 800;
+  margin-top: 70px;
+}
+
+  */
